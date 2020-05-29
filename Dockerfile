@@ -10,7 +10,7 @@ COPY core ./core
 COPY data_model ./data_model
 COPY tests ./tests
 COPY requirements.txt ./
-# COPY resources ./resources
+COPY resources ./resources
 
 RUN pip install -r requirements.txt
 
