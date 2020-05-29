@@ -16,4 +16,4 @@ RUN pip install -r requirements.txt
 
 # RUN python tests/__init__.py
 
-ENTRYPOINT [ "python", "core/main.py" ]
+ENTRYPOINT [ "python", "core/main.py", "-a", "0.0.0.0"]
