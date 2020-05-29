@@ -14,7 +14,7 @@ services:
       - 4840
     ports:
       - '61499:61499'
-      - '4840:4840'
+      - '5840:4840'
     deploy:
       replicas: 1
       update_config:
