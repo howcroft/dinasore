@@ -1,0 +1,24 @@
+version: "3.8"
+services:
+  dinasore:
+    image: "dinasore/dinasore-runtime:1.0"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      - "LOG_LEVEL=ERROR"
+      - "NUMBER_SAMPLES=5"
+      - "SECONDS_PER_SAMPLE=20"
+    expose:
+      - 61499
+      - 4840
+    ports:
+      - '61499:61499'
+      - '4840:4840'
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 1
+        delay: 10s
+      restart_policy:
+        condition: on-failure
