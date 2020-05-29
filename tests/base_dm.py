@@ -3,7 +3,7 @@ from opc_ua import client
 
 
 class BaseTests(unittest.TestCase):
-    port_server = 4841
+    port_server = 9999
     base_list = [(0, 'Objects'), (2, 'SMART_COMPONENT')]
     manager_4diac = None
 
@@ -141,7 +141,7 @@ class BaseTests(unittest.TestCase):
 
 
 class PipelineTests(unittest.TestCase):
-    port_server = 4841
+    port_server = 9999
     base_list = [(0, 'Objects'), (2, 'SMART_COMPONENT')]
     manager_4diac = None
 
