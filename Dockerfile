@@ -15,4 +15,4 @@ COPY tests ./tests
 COPY resources ./resources
 # RUN python tests/__init__.py
 
-ENTRYPOINT [ "python", "core/main.py", "-a", "0.0.0.0"]
+ENTRYPOINT [ "python", "core/main.py", "-a", "0.0.0.0", "-l", "INFO", "-u", "4840", "-p", "61499", "-m", "5", "10"]
